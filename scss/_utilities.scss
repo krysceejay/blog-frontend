@@ -84,6 +84,22 @@
   }
 }
 
+input,
+select,
+textarea {
+  border: 1px $light-color solid;
+  padding: 10px;
+  font-size: 1rem;
+  //height: 25px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border: 1px $main-color solid;
+}
+
 #main-nav {
   display: flex;
   position: sticky;

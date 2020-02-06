@@ -113,10 +113,11 @@ p {
     grid-area: topost;
     //background: $secondary-color;
     .topost-content {
+      margin-bottom: 3rem;
       &-single {
         display: flex;
         justify-content: center;
-        margin-bottom: 2rem;
+        margin: 1rem 0;
         &-img {
           flex: 2;
           width: 100%;
@@ -141,10 +142,24 @@ p {
         }
       }
     }
-  }
-  &-socials {
-    grid-area: socials;
-    background: $secondary-color;
+    .newsletter-sub {
+      margin-bottom: 3rem;
+      &-form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        width: 100%;
+      }
+    }
+    .connect-socials {
+      &-icons {
+        display: flex;
+        justify-content: space-between;
+        i {
+          color: $dark-color;
+        }
+      }
+    }
   }
 }
 
