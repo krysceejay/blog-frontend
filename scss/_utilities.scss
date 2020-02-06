@@ -41,6 +41,49 @@
   }
 }
 
+//Buttons
+%btn-shared {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  //border-radius: 5px;
+  text-decoration: none !important;
+  box-shadow: none;
+  font-size: 1rem;
+}
+
+.btn {
+  &-main {
+    @extend %btn-shared;
+    color: #f4f4f4;
+    background-color: $main-color;
+  }
+}
+
+.paginate-links {
+  &-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    li {
+      a {
+        border-radius: 0;
+        padding: 0.6rem 1rem;
+        margin: auto 0.1rem;
+        border: rgba(0, 0, 0, 0.1) 0.5px solid;
+        &:hover,
+        &.current {
+          background-color: $main-color;
+          color: $light-color;
+        }
+      }
+    }
+  }
+}
+
 #main-nav {
   display: flex;
   position: sticky;
